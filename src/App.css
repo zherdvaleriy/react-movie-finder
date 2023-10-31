@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  background: url(https://www.shutterstock.com/image-vector/blue-green-gradient-mesh-background-260nw-1728483901.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background: url(https://cdn-icons-png.flaticon.com/512/3041/3041493.png);
+  background-repeat: round;
+  background-size: contain;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.App-footer{
+  background-color: #51555b;
+  /* background: url(https://cdn-icons-png.flaticon.com/512/3041/3041493.png); */
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  height: 180px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+
+
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+
+.text{
+  font-size: calc(55px + 2vmin);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  /* text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1); */
+
+             /* text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1); */
+
+             text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+
+             
+
+ 
+}
+
+
+
+.movie {
+  padding: 5px 25px 10px 25px;
+  max-width: 25%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(161, 15, 15);
+}
+
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+.btn{
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 14px 20px;
+  background-color: #bdadad;
+  border-radius: 7px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.btn:hover{
+  background-color: #282c34;
+  color: rgb(212, 204, 194);
+ 
+}
+
+
+.search > input[type="text"]{
+  width: 40%;
+  min-width: 170px;
+}
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+/* Applying styles for dark theme */
+.App.dark {
+  background-color: #5b5858;
+  background-image: none;
+  color: #ffffff;
+}
+.App.dark .App-footer{
+  background-color: #212223;
+}
