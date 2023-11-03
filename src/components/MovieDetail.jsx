@@ -18,7 +18,7 @@ export default function MovieDetail() {
         setLoading(true);
         setError(null);
 
-        const apiUrl = `http://www.omdbapi.com/?i=${imdbID}&apikey=f4c06ce5`
+        const apiUrl = `https://www.omdbapi.com/?i=${imdbID}&apikey=f4c06ce5`
         console.log('API URL:',apiUrl)
       
         fetch(apiUrl) 

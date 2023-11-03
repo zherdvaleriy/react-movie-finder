@@ -5,7 +5,7 @@ import Search from '../components/Search';
 import { ThemeProvider } from '../ThemeContext';
 import { useTheme } from '../ThemeContext';
 
-const MOVIE_API_URL = "http://www.omdbapi.com/?s=man&apikey=f4c06ce5";
+const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=f4c06ce5";
 
 const initialState = {
   loading: true,
@@ -70,7 +70,7 @@ function Home() {
       type: 'SEARCH_MOVIES_REQUEST',
     });
 
-    fetch(`http://www.omdbapi.com/?s=${searchValue}&apikey=f4c06ce5&page=${state.page}`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=f4c06ce5&page=${state.page}`)
       .then((response) => response.json())
       .then((jsonResponse) => {
         if (jsonResponse.Response === 'True') {
