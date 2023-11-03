@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
+  
 }
+
+a{
+  color: #212223;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
   background: url(https://www.shutterstock.com/image-vector/blue-green-gradient-mesh-background-260nw-1728483901.jpg);
@@ -12,6 +19,7 @@
 
 .App-header {
   /* background-color: #282c34; */
+  background-color: aqua;
   background: url(https://cdn-icons-png.flaticon.com/512/3041/3041493.png);
   background-repeat: round;
   background-size: contain;
@@ -79,8 +87,17 @@
   padding: 5px 25px 10px 25px;
   max-width: 25%;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  cursor: pointer;
+
 }
 
+.movie:hover{
+
+ box-shadow: 0px 14px 30px rgba(14, 14, 14, 0.8);
+ transform: translateY(-5px);
+
+}
 .errorMessage {
   margin: auto;
   font-weight: bold;
