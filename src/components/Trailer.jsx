@@ -31,26 +31,22 @@ const youtubeUrl = [
 function Trailer({movie}) {
   return (
     <div>
-    {youtubeUrl.map((item,i) => {
-
-    if (movie.imdbID === item.id) {
+    {youtubeUrl.map((item, i) => {
+      if (movie.imdbID === item.id) {
+       
+        const fullScreenUrl = item.url + "&fs=1";
         return (
-        <>
-        <div className="container-name">
-
-        <Link className="example_b" target="_blank" key={i} to={item.url}>
-          Watch Trailer Now
-        </Link>
-
-      </div>
-      
-      </>
-    );
-  } else {
-    return null; 
-  }
-})}
-</div>
+          <div className="container-name" key={i}>
+            <Link className="example_b" target="_blank" to={fullScreenUrl}>
+              Watch Trailer Now
+            </Link>
+          </div>
+        );
+      } else {
+        return null;
+      }
+    })}
+  </div>
   );
 
 
