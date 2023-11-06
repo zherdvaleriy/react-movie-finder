@@ -6,6 +6,9 @@ function Trailer(youtubeUrl) {
       <a href="#">Youtube Trailer</a>
     </div>
   );
+
+
+  
 }
 
 export default Trailer;

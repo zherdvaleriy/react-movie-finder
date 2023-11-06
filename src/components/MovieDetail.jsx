@@ -8,7 +8,7 @@ const DEFAULT_PLACEHOLDER_IMAGE =
   "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg";
 
 const youtubeUrl = [
-  { id: "tt0371746", url: "https://www.youtube.com/watch?v=8ugaeA-nMTc " },
+  { id: "tt0371746", url: "https://www.youtube.com/watch?v=8ugaeA-nMTc "},
   { id: "tt1300854", url: "https://www.youtube.com/watch?v=Ke1Y3P9D0Bc" },
   { id: "tt0145487", url: "https://www.youtube.com/watch?v=t06RUxPbp_c" },
   { id: "tt1228705", url: "https://www.youtube.com/watch?v=wKtcmiifycU" },
@@ -76,9 +76,7 @@ export default function MovieDetail() {
   const poster =
     movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
 
-  // https://www.youtube.com/watch?v=8ugaeA-nMTc // iron 1
-  // https://www.youtube.com/watch?v=Ke1Y3P9D0Bc // iron 4
-  //https://www.youtube.com/watch?v=wKtcmiifycU // iron 2
+  
 
   return (
     <div className="box">
@@ -97,14 +95,13 @@ export default function MovieDetail() {
           {youtubeUrl.map((item) => {
             if (movie.imdbID == item.id) {
               return (
-                <Link className="button-youtube" to={item.url}>
-                  Watch Trailer Now
-                </Link>
+                <Link className="button-youtube" to = {item.url}>
+                  Watch Trailer Now </Link>
               );
             } else {
               return false;
             }
-          })}
+          })}""
         </span>
       </div>
 
@@ -144,7 +141,7 @@ export default function MovieDetail() {
         {" "}
         <Button></Button>
       </Link>
-      <span>Test</span>
+     
     </div>
   );
 }
