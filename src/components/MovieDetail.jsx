@@ -4,33 +4,10 @@ import Button from "./Button";
 import "./MovieDetail.scss";
 import Trailer from "./Trailer";
 
+
+
 const DEFAULT_PLACEHOLDER_IMAGE =
   "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg";
-
-const youtubeUrl = [
-  { id: "tt0371746", url: "https://www.youtube.com/watch?v=8ugaeA-nMTc "},
-  { id: "tt1300854", url: "https://www.youtube.com/watch?v=Ke1Y3P9D0Bc" },
-  { id: "tt0145487", url: "https://www.youtube.com/watch?v=t06RUxPbp_c" },
-  { id: "tt1228705", url: "https://www.youtube.com/watch?v=wKtcmiifycU" },
-  { id: "tt10872600", url: "https://www.youtube.com/watch?v=JfVOs4VSpmA" },
-  { id: "tt0770828", url: "https://www.youtube.com/watch?v=wArmHSPIvlQ" },
-  { id: "tt0478970", url: "https://www.youtube.com/watch?v=ZlNFpri-Y40" },
-
-  { id: "tt2250912", url: "https://www.youtube.com/watch?v=rk-dF1lIbIg" },
-  { id: "tt0316654", url: "https://www.youtube.com/watch?v=nq1M_Wc4FIc" },
-  { id: "tt0948470", url: "https://www.youtube.com/watch?v=-tnxzJ0SSOw" },
-  { id: "tt4633694", url: "https://www.youtube.com/watch?v=g4Hbz2jLxvQ" },
-  { id: "tt0413300",url: "https://www.youtube.com/watch?v=e5wUilOeOmg" },
-  { id: "tt6320628",url: "https://www.youtube.com/watch?v=Nt9L1jCKGnE" },
-  { id: "tt0352248",url: "https://www.youtube.com/watch?v=e5wUilOeOmg" },
-  { id: "tt0095953",url: "https://www.youtube.com/watch?v=mlNwXuHUA8I" },
-  { id: "tt1872181",url: "https://www.youtube.com/watch?v=nbp3Ra3Yp74" },
-  { id: "tt5095030",url: "https://www.youtube.com/watch?v=ZlNFpri-Y40" },
-  { id: "tt0454848",url: "https://www.youtube.com/watch?v=sDC6ioDV4uc" },
-  { id: "tt0328107",url: "https://www.youtube.com/watch?v=ALKCTuH79iE" },
-  { id: "tt1068680",url: "https://www.youtube.com/watch?v=dDh1l3qVNoY" },
-  { id: "tt1638355",url: "https://www.youtube.com/watch?v=-x08iNZ8Mfc" },
-];
 
 
 
@@ -77,8 +54,8 @@ export default function MovieDetail() {
 
   const poster =
     movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
+    
 
-  
 
   return (
     <div className="box">
@@ -93,18 +70,10 @@ export default function MovieDetail() {
           />
         </div>
         <p>({movie.Year})</p>
-        <span>
-          {youtubeUrl.map((item) => {
-            if (movie.imdbID == item.id) {
-              return (
-                <Link className="button-youtube" to = {item.url}>
-                  Watch Trailer Now </Link>
-              );
-            } else {
-              return false;
-            }
-          })}""
-        </span>
+
+   
+      <Trailer movie={movie} />
+
       </div>
 
       <div className="info">
@@ -137,13 +106,19 @@ export default function MovieDetail() {
           <li>
             <b>Awards:</b> {movie.Awards}
           </li>
-        </ul>{" "}
+
+
+        </ul>
+
       </div>
-      <Link to="/">
-        {" "}
-        <Button></Button>
-      </Link>
+          <div className="container-name">
+
+          <Link to="/">  
+            <Button></Button>
+          </Link>
+
+          </div>
      
-    </div>
+      </div>
   );
 }

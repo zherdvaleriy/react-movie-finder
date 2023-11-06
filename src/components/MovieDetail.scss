@@ -10,6 +10,7 @@
     justify-content: center;
     gap: 4rem;
     
+    
 
     .info{
 
@@ -57,10 +58,37 @@
     }
 }
 
-.button-youtube{
-    padding: 15px 40px;
-    color: #ffffff;
-    background-color: #282c34;
-    text-align: center;
-    border-radius: 15px;
-}
+
+
+.container-name {
+    margin-left: 0px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+ 
+  
+   
+
+  }
+  
+  .example_b {
+    font-family: 'Poppins';
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+  }
+  
+  .example_b:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+  }
