@@ -33,14 +33,13 @@ a{
   padding: 20px;
   cursor: pointer;
 }
+
 .App-footer{
+
   background-color: #51555b;
-  /* background: url(https://cdn-icons-png.flaticon.com/512/3041/3041493.png); */
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: center;
   height: 180px;
   margin-top: 30px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +146,19 @@ input[type="submit"]:hover {
  
 }
 
+.btn-theme{
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.btn-theme:hover{
+
+
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
 
 .search > input[type="text"]{
   width: 40%;
@@ -171,6 +183,10 @@ input[type="submit"]:hover {
     max-width: 100%;
     margin: auto;
   }
+  .social-icons{
+   flex-wrap: wrap;
+   margin-top: 60px;
+  }
 }
 
 /* Applying styles for dark theme */
@@ -182,3 +198,5 @@ input[type="submit"]:hover {
 .App.dark .App-footer{
   background-color: #212223;
 }
+
+

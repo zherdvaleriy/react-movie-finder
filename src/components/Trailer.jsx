@@ -29,15 +29,15 @@ const youtubeUrl = [
 ];
 
 function Trailer({movie}) {
+  
   return (
     <div>
     {youtubeUrl.map((item, i) => {
       if (movie.imdbID === item.id) {
        
-        const fullScreenUrl = item.url + "&fs=1";
         return (
           <div className="container-name" key={i}>
-            <Link className="example_b" target="_blank" to={fullScreenUrl}>
+            <Link className="example_b" target="_blank" to={item.url}>
               Watch Trailer Now
             </Link>
           </div>

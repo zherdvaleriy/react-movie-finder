@@ -5,6 +5,7 @@ import Search from "../components/Search";
 import { ThemeProvider } from "../ThemeContext";
 import { useTheme } from "../ThemeContext";
 
+
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=f4c06ce5";
 
 const initialState = {
@@ -95,18 +96,27 @@ function Home() {
       <div className={`App ${isDarkTheme ? "dark" : "light"}`}>
         <header className="App-header"></header>
         <h1 className="text">MOVIES PLANET</h1>
+
+       
+
+
         <button
-          className="btn"
+          
+          className="btn-theme"
           onClick={handleThemeToggle}
           style={{
             position: "absolute",
             top: "120px",
             right: "50px",
             fontSize: "14px",
+            
           }}
         >
-          Toggle Theme
+          <img width={70} height={70} style={{borderRadius: '59%'}} src="https://thumbs.dreamstime.com/b/sun-moon-icon-black-illustration-isolated-vector-flat-sign-logo-web-design-eps-white-background-144163819.jpg" alt="" />
         </button>
+
+
+
         <Search search={search} />
 
         <div className="movies">
