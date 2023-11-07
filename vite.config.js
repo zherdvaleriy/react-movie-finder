@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react', 'react-dom', 'react-youtube'], // Add 'react-youtube' to the external dependencies
+      external: ['react', 'react-dom', 'react-youtube','movie-trailer']// Add 'react-youtube' to the external dependencies
     },
   },
 });
