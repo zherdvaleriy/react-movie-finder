@@ -21,7 +21,7 @@ Before you start, make sure you have the following software/tools installed:
 - *Node.js*
 - *React*
 - *React Router*
-- *REact Router Dom*
+- *React Router Dom*
 - *React sass*
 - *React icons*
 - *React youtube*
