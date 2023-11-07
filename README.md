@@ -7,7 +7,7 @@ Movies Planet is a web application that allows you to search for movies and view
 - [Movies Planet](https://react-movie-finder-weld.vercel.app/)
   - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
-    - [Prerequisites](#prerequisites)
+  - [Prerequisites](#prerequisites)
   - [React technologies used:](#react-technologies-used)
 
 ## Project Overview
