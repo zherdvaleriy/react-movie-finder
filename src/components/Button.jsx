@@ -1,4 +1,4 @@
-import './Button.css'
+import './Button.scss'
 import {Link} from 'react-router-dom'
 
 export default function Button() {

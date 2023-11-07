@@ -97,9 +97,6 @@ function Home() {
         <header className="App-header"></header>
         <h1 className="text">MOVIES PLANET</h1>
 
-       
-
-
         <button
           
           className="btn-theme"

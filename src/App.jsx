@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import './App.css'
+import './App.scss'
 import MovieDetail from "./components/MovieDetail";
 
 
@@ -15,5 +15,6 @@ export default function App() {
     </Routes>
       
   </>
+  
   )
 }
