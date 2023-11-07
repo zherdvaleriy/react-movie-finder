@@ -61,6 +61,7 @@ export default function MovieDetail() {
     <div className="box">
       <div className="movie-item">
         <h2>{movie.Title}</h2>
+          <Trailer movie={movie} />
         <div className="img-item">
           <img
             src={poster}
@@ -72,7 +73,6 @@ export default function MovieDetail() {
         <p>({movie.Year})</p>
 
    
-      <Trailer movie={movie} />
 
       </div>
 
@@ -111,7 +111,7 @@ export default function MovieDetail() {
         </ul>
 
       </div>
-          <div className="container-name">
+          <div className="container-btn">
 
           <Link to="/">  
             <Button></Button>

@@ -5,7 +5,7 @@ export default function Button() {
 
 
   return (
-    <div className="container-name">
+    <div className="container-btn">
         <Link className="example_b" href="#" target="_blank" rel="nofollow">
           <span>Home</span>
         </Link>

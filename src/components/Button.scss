@@ -1,9 +1,12 @@
 $color_1: #fff;
 $font-family_1: 'Poppins';
 
-.container-name {
+.container-btn {
 	margin-left: 30px;
 	padding-bottom: 20px;
+	position: absolute;
+	top: 40px;
+	right: 40px;
 }
 .example_b {
 	font-family: $font-family_1;
