@@ -112,8 +112,6 @@ function Home() {
           <img width={70} height={70} style={{borderRadius: '59%'}} src="https://thumbs.dreamstime.com/b/sun-moon-icon-black-illustration-isolated-vector-flat-sign-logo-web-design-eps-white-background-144163819.jpg" alt="" />
         </button>
 
-
-
         <Search search={search} />
 
         <div className="movies">
@@ -130,7 +128,7 @@ function Home() {
           )}
         </div>
         <button className="btn" onClick={() => dispatch({ type: "LOAD_MORE" })}>
-          LOAD MORE
+           MORE FILMS
         </button>
         <Footer />
       </div>

@@ -69,10 +69,10 @@ export default function MovieDetail() {
             height={400}
           />
         </div>
+        
           <Trailer movie={movie} />
-        <p>({movie.Year})</p>
 
-   
+        <p>({movie.Year})</p>
 
       </div>
 
